@@ -11,21 +11,23 @@ help: str = 'commands: wish10, wish1, inventory, help, pulls, getmorepulls, exit
 fivestarchance: float = (.006)
 fourstarchance: float = (.051)
 crapchance: float = (.943)
-fivestarpicked: bool = False
 fourstarpicked: bool = False
 crappicked: bool = False
+pullresult = []
 
-pull1: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull2: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull3: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull4: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull5: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull6: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull7: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull8: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull9: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
-pull10: str = random.choices(fivestarpicked + fourstarpicked + crappicked, weights=(fivestarchance, fourstarchance, crapchance), k=1)[0]
 
+def wishforacharacter():
+    result = random.choices(['fivestar', 'fourstar', 'crap'], weights=[fivestarchance, fourstarchance, crapchance])[0]
+    pullresult.append(result)
+    if (pullresult == 'fivestar'):
+        print(random.choices(fivestar))
+    elif (pullresult == 'fourstar'):
+        print(random.choices(fourstar))
+    elif (pullresult == 'crap'):
+        print(random.choices(crap))
+    return
+
+        
 
 ##start of silly wisher
 print('welcome to budget silly wisher v1.0')
@@ -80,7 +82,7 @@ def inventory():
 
 def pull():
     global pulls
-    print (f'you have {pulls} pulls left')
+    print (f'you have {pulls} pull(s) left')
     return
 
 def wait(seconds: int):
@@ -115,6 +117,8 @@ while True:
         pull()
     elif user_input == 'getmorepulls':
         getmorepulls()
+    elif user_input == 'wt':
+        wishforacharacter()
     elif user_input == 'exit':
         break
     else:
