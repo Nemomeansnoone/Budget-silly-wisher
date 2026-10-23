@@ -2,30 +2,40 @@ from asyncio import wait
 import random
 
 user_input: str = ''
-pulls: int = 1
-fivestar: list[str] = {"Keqing":1, "Dehya":2, "Diluc":3, "Qiqi":4, "Jean":5, "Tighnari":6, "Mona":7, "Yumemizuki Mizuki":8}
-fourstar: list[str] = {"Aino":9, "Aloysha":10, "Amber":11, "Barbara":12, "Beidou":13, "Bennett":14, "Candace":15, "Charlotte":16, "Chevreuse":17, "Chongyun":18, "Collei":19, "Dahlia":20, "Diona":21, "Dori":22, "Faruzan":23, "Fischl":24, "Freminet":25, "Gaming":26, "Gorou":27, "Iansan":28, "Ifa":29, "Illuga":30, "Jahoda":31, "Kachina":32, "Kaeya":33, "Kaveh":34, "Kirara":35, "Kujou Sara":36, "Kuki Shinobu":37, "Lan Yan":38, "Layla":39, "Lisa":40, "Lynette":41, "Mika":42, "Ningguang":43}
-crap: list[str] = {'crap1':44, 'crap2':45}
-userinventory: list[str] = {''}
+pulls: int = 69420
+fivestar: list[str] = ['Keqing', 'Dehya', 'Diluc', 'Qiqi', 'Jean', 'Tighnari', 'Mona', 'Yumemizuki Mizuki']
+fourstar: list[str] = ['Aino', 'Aloysha', 'Amber', 'Barbara', 'Beidou', 'Bennett', 'Candace', 'Charlotte', 'Chevreuse', 'Chongyun', 'Collei', 'Dahlia', 'Diona', 'Dori', 'Faruzan', 'Fischl', 'Freminet', 'Gaming', 'Gorou', 'Iansan', 'Ifa', 'Illuga', 'Jahoda', 'Kachina', 'Kaeya', 'Kaveh', 'Kirara', 'Kujou Sara', 'Kuki Shinobu', 'Lan Yan', 'Layla', 'Lisa', 'Lynette', 'Mika', 'Ningguang']
+crap: list[str] = ['crap']
+userinventory: list[str] = ['']
 help: str = 'commands: wish10, wish1, inventory, help, pulls, getmorepulls, exit'
 fivestarchance: float = (.006)
 fourstarchance: float = (.051)
 crapchance: float = (.943)
-fourstarpicked: bool = False
-crappicked: bool = False
-pullresult = []
-
+result2: str = ['']
+pull1: str = ['']
+pull2: str = ['']
+pull3: str = ['']
+pull4: str = ['']
+pull5: str = ['']
+pull6: str = ['']
+pull7: str = ['']
+pull8: str = ['']
+pull9: str = ['']
+pull10: str = ['']
+globalresult: str = ['']
 
 def wishforacharacter():
+    global globalresult
     result = random.choices(['fivestar', 'fourstar', 'crap'], weights=[fivestarchance, fourstarchance, crapchance])[0]
-    pullresult.append(result)
-    if (pullresult == 'fivestar'):
-        print(random.choices(fivestar))
-    elif (pullresult == 'fourstar'):
-        print(random.choices(fourstar))
-    elif (pullresult == 'crap'):
-        print(random.choices(crap))
-    return
+    if (result == 'fivestar'):
+        result2 =(random.choices(fivestar))
+        globalresult.append(result2)
+    elif (result == 'fourstar'):
+        result2 = (random.choices(fourstar))
+        globalresult.append(result2)
+    elif (result == 'crap'):
+        result2 = (random.choices(crap))
+        globalresult.append(result2)
 
         
 
@@ -37,12 +47,57 @@ print('oh also no weapons cuz i said so')
 print('type "help" for a list of commands or "wish10" or "wish1" to start pulling')
 print(f'you have {pulls} pulls left')
 
+def clearrglobalresult():
+    global globalresult
+    globalresult = ['']
+    return
+
 def wish10():
     global pulls 
     if (pulls > 10):
         pulls -= 10
         print ('pulling...')
-        wait (5)
+        wishforacharacter()
+        pull1.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull2.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull3.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull4.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull5.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull6.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull7.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull8.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull9.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wishforacharacter()
+        pull10.append(globalresult)
+        wait (.02)
+        clearrglobalresult()
+        wait (2)
         print (f'you pulled {pull1}, {pull2}, {pull3}, {pull4}, {pull5}, {pull6}, {pull7}, {pull8}, {pull9}, and {pull10}')
         userinventory.append(pull1)
         userinventory.append(pull2)
