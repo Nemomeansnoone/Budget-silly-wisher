@@ -1165,6 +1165,186 @@ def changebanner():
             fourstarlim = (['Rosaria', 'Yanfei', 'Faruzan'])
             banner_ver = bannerinput
             bannerver = str('3.8 phase 2 (kokomi)')
+        elif (bannerinput == 4011):
+            fivestarlim = (['Yelan'])
+            fourstarlim = (['Barbara', 'Bennett', 'Lynette'])
+            banner_ver = bannerinput
+            bannerver = str('4.0 phase 1 (yelan)')
+        elif (bannerinput == 4012):
+            fivestarlim = (['Lyney'])
+            fourstarlim = (['Barbara', 'Bennett', 'Lynette'])
+            banner_ver = bannerinput
+            bannerver = str('4.0 phase 1 (lyney)')
+        elif (bannerinput == 4021):
+            fivestarlim = (['Tartaglia'])
+            fourstarlim = (['Noelle', 'Sayu', 'Freminet'])
+            banner_ver = bannerinput
+            bannerver = str('4.0 phase 2 (tartaglia)')
+        elif (bannerinput == 4022):
+            fivestarlim = (['Zhongli'])
+            fourstarlim = (['Noelle', 'Sayu', 'Freminet'])
+            banner_ver = bannerinput
+            bannerver = str('4.0 phase 2 (zhongli)')
+        elif (bannerinput == 4111):
+            fivestarlim = (['Hutao'])
+            fourstarlim = (['Fischl', 'Xingqiu', 'Diona'])
+            banner_ver = bannerinput
+            bannerver = str('4.1 phase 1 (hutao)')
+        elif (bannerinput == 4112):
+            fivestarlim = (['Neuvillette'])
+            fourstarlim = (['Fischl', 'Xingqiu', 'Diona'])
+            banner_ver = bannerinput
+            bannerver = str('4.1 phase 1 (neuvillette)')
+        elif (bannerinput == 4121):
+            fivestarlim = (['Venti'])
+            fourstarlim = (['Chongyun', 'Thoma', 'Dori'])
+            banner_ver = bannerinput
+            bannerver = str('4.1 phase 2 (venti)')
+        elif (bannerinput ==4122):
+            fivestarlim = (['Wriothesley'])
+            fourstarlim = (['Chongyun', 'Thoma', 'Dori'])
+            banner_ver = bannerinput
+            bannerver = str('4.1 phase 2 (wriothesley)')
+        elif (bannerinput == 4211):
+            fivestarlim = (['Baizhu'])
+            fourstarlim = (['Beidou', 'Collei', 'Charlotte'])
+            banner_ver = bannerinput
+            bannerver = str('4.2 phase 1 (baizhu)')
+        elif (bannerinput == 4212):
+            fivestarlim = (['Furina'])
+            fourstarlim = (['Beidou', 'Collei', 'Charlotte'])
+            banner_ver = bannerinput
+            bannerver = str('4.2 phase 1 (furina)')
+        elif (bannerinput == 4221):
+            fivestarlim = (['Ayato'])
+            fourstarlim = (['Xiangling', 'Kuki Shinobu', 'Kirara'])
+            banner_ver = bannerinput
+            bannerver = str('4.2 phase 2 (ayato)')
+        elif (bannerinput == 4222):
+            fivestarlim = (['Cyno'])
+            fourstarlim = (['Xiangling', 'Kuki Shinobu', 'Kirara'])
+            banner_ver = bannerinput
+            bannerver = str('4.2 phase 2 (cyno)')
+        elif (bannerinput == 4311):
+            fivestarlim = (['Ayaka'])
+            fourstarlim = (['Surcrose', 'Rosaria', 'Candace'])
+            banner_ver = bannerinput
+            bannerver = str('4.3 phase 1 (ayaka)')
+        elif (bannerinput == 4312):
+            fivestarlim = (['Navia'])
+            fourstarlim = (['Sucrose', 'Rosaria', 'Candace'])
+            banner_ver = bannerinput
+            bannerver = str('4.3 phase 1 (navia)')
+        elif (bannerinput == 4321):
+            fivestarlim = (['Yoimiya'])
+            fourstarlim = (['Bennett', 'Kujou Sara', 'Chevreuse'])
+            banner_ver = bannerinput
+            bannerver = str('4.3 phase 2 (yoimiya)')
+        elif (bannerinput == 4322):
+            fivestarlim = (['Raiden Shogun'])
+            fourstarlim = (['Bennett', 'Kujou Sara', 'Chevreuse'])
+            banner_ver = bannerinput
+            bannerver = str('4.3 phase 2 (raiden shogun)')
+        elif (bannerinput == 4411):
+            fivestarlim = (['Nahida'])
+            fourstarlim = (['Noelle', 'Faruzan', 'Gaming'])
+            banner_ver = bannerinput
+            bannerver = str('4.4 phase 1 (nahida)')
+        elif (bannerinput == 4412):
+            fivestarlim = (['Xianyun'])
+            fourstarlim = (['Noelle', 'Faruzan', 'Gaming'])
+            banner_ver = bannerinput
+            bannerver = str('4.4 phase 1 (xianyun)')
+        elif (bannerinput == 4421):
+            fivestarlim = (['Yae Miko'])
+            fourstarlim = (['Ningguang', 'Xinyan', 'Yaoyao'])
+            banner_ver = bannerinput
+            bannerver = str('4.4 phase 2 (yae miko)')
+        elif (bannerinput == 4422):
+            fivestarlim = (['Xiao'])
+            fourstarlim = (['Ningguang', 'Xinyan', 'Yaoyao'])
+            banner_ver = bannerinput
+            bannerver = str('4.4 phase 2 (xiao)')
+        elif (bannerinput == 4511):
+            fivestarlim = (['Itto'])
+            fourstarlim = (['Gorou', 'Yun Jin', 'Dori'])
+            banner_ver = bannerinput
+            bannerver = str('4.5 phase 1 (itto)')
+        elif (bannerinput == 4512):
+            fivestarlim = (['Chiori'])
+            fourstarlim = (['Gorou', 'Yun Jin', 'Dori'])
+            banner_ver = bannerinput
+            bannerver = str('4.5 phase 1 (chiori)')
+        elif (bannerinput == 4521):
+            fivestarlim = (['Kazuha'])
+            fourstarlim = (['Barbara', 'Xingqiu', 'Yanfei'])
+            banner_ver = bannerinput
+            bannerver = str('4.5 phase 2 (kazuha)')
+        elif (bannerinput == 4522):
+            fivestarlim = (['Neuvillette'])
+            fourstarlim = (['Barbara', 'Xingqiu', 'Yanfei'])
+            banner_ver = bannerinput
+            bannerver = str('4.5 phase 2 (neuvillette)')
+        elif (bannerinput == 4611):
+            fivestarlim = (['Lyney'])
+            fourstarlim = (['Xiangling', 'Lynette', 'Freminet'])
+            banner_ver = bannerinput
+            bannerver = str('4.6 phase 1 (lyney)')
+        elif (bannerinput == 4612):
+            fivestarlim = (['Arlecchino'])
+            fourstarlim = (['Xiangling', 'Lynette', 'Freminet'])
+            banner_ver = bannerinput
+            bannerver = str('4.6 phase 1 (arlecchino)')
+        elif (bannerinput == 4621):
+            fivestarlim = (['Baizhu'])
+            fourstarlim = (['Beidou', 'Layla', 'Faruzan'])
+            banner_ver = bannerinput
+            bannerver = str('4.6 phase 2 (baizhu)')
+        elif (bannerinput == 4622):
+            fivestarlim = (['Wanderer'])
+            fourstarlim = (['Beidou', 'Layla', 'Faruzan'])
+            banner_ver = bannerinput 
+            bannerver = str('4.6 phase 2 (wanderer)')
+        elif (bannerinput == 4711):
+            fivestarlim = (['Clorinde'])
+            fourstarlim = (['Bennett', 'Thoma', 'Sethos'])
+            banner_ver = bannerinput
+            bannerver = str('4.7 phase 1 (clorinde)')
+        elif (bannerinput == 4712):
+            fivestarlim = (['Alhaitham'])
+            fourstarlim = (['Bennett', 'Thona', 'Sethos'])
+            banner_ver = bannerinput
+            bannerver = str('4.7 phase 1 (alhaithaim)')
+        elif (bannerinput == 4721):
+            fivestarlim = (['Furina'])
+            fourstarlim = (['Noelle', 'Rosaria', 'Gaming'])
+            banner_ver = bannerinput 
+            bannerver = str('4.7 phase 2 (furina)')
+        elif (bannerinput == 4722):
+            fivestarlim = (['Sigewinne'])
+            fourstarlim = (['Noelle', 'Rosaria', 'Gaming'])
+            banner_ver = bannerinput
+            bannerver = str('4.7 phase 2 (sigewinne)')
+        elif (bannerinput == 4811):
+            fivestarlim = (['Nilou'])
+            fourstarlim = (['Ningguang', 'Kaveh', 'Kirara'])
+            banner_ver = bannerinput
+            bannerver = str('4.8 phase 1 (nilou)')
+        elif (bannerinput == 4812):
+            fivestarlim = (['Navia'])
+            fourstarlim = (['Ningguang', 'Kaveh', 'Kirara'])
+            banner_ver = bannerinput
+            bannerver = str('4.8 phase 1 (navia)')
+        elif (bannerinput == 4821):
+            fivestarlim = (['Yelan'])
+            fourstarlim = (['Razor', 'Xianglling', 'Yanfei'])
+            banner_ver = bannerinput 
+            bannerver = str('4.8 phase 2 (yelan)')
+        elif (bannerinput == 4822):
+            fivestarlim = (['Emilie'])
+            fourstarlim = (['Razor', 'Xiangling', 'Yanfei'])
+            banner_ver = bannerinput
+            bannerver = str('4.8 phase 2 (emilie)')
         else:
             print (f'please enter a valid version number and banner!')
     except ValueError:
