@@ -20,3 +20,16 @@ cd to the directory where budget silly wisher is and run
 linux:
 cd to the directory where budget silly wisher is and run
 ```python3 budget-silly-wisher.py```
+
+## Commands list
+- wish1 (wishes once)
+- wish10 (wishes ten times)
+- inventory (opens inventory)
+- pulls (prints out the number of pulls you have left)
+- getmorepaidmos (allows you to obtain more paidmos (currency to get pulls))
+- getmorepulls (allows you to obtain more pulls with paidmos)
+- seemywallet (prints out the amount of paidmos you have left)
+- currentbanner (prints the current banner, also lists out the limited characters
+- changebanner (switches banner for limited characters)
+- help (prints out the command list)
+- exit (exits the program)
